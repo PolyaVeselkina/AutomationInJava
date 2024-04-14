@@ -95,7 +95,8 @@ public class Market implements MarketBehaviour, QueueBehaviour {
 
         while(actIterator.hasNext()) {            //до тех пор, пока в списке есть элементы
 
-            Actor nextHuman = actIterator.next();   //получаем следующий элемент
+            Actor nextHuman = actIterator.next();
+            System.out.println(nextHuman + " следующий");   //получаем следующий элемент
      
            // System.out.println(queueOut);
             actIterator.remove();                  //удаляем human с нужным именем
